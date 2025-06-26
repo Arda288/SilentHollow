@@ -1,0 +1,141 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rastgele Animasyon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="box"></div>
+
+  <style>body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 20px;
+  animation: spin 3s linear infinite;
+  transition: background-color 1s;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+  <script src="script.js">
+    const box = document.querySelector('.box');
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for(let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+setInterval(() => {
+  box.style.backgroundColor = getRandomColor();
+}, 1000);
+  </script>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silent Hollow</title>
+  <link rel="stylesheet" href="proje.css">
+</head>
+<body>
+     
+    <header>
+        <h1 class="header-title">Silent Hollow</h1>
+   <a href="proje.html"><img src="Desktop/webProje/pngwing.com.png" class="logo" /></a>
+   
+  </header>
+<main>
+  
+<br><br>
+ <div class="content">
+    <h2>Deneme</h2>
+    <p>......</p>
+      <br>
+     <p>......</p>
+
+  </div>
+  
+
+
+</main>
+
+   <footer>
+    <img src="Desktop/webProje/pngwing.com.png"  class="bottom-image" />
+  </footer>
+
+
+    <div class="nav-container">
+    <div class="menu-toggle">≡</div>
+    <nav class="right-navbar">
+      <a href="bolum1.html">1. Bölüm</a>
+      <a href="bolum2.html">2. Bölüm</a>
+      <a href="bolum3.html">3. Bölüm</a>
+      <a href="#section4">4. Bölüm</a>
+    </nav>
+  </div>
+
+  
+<p>wqdfwffsf</p>
+
+
+
+
+
+
+
+<script>
+
+
+  document.querySelector(".bottom-image").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // animasyonlu geçiş
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

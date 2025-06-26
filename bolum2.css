@@ -1,0 +1,213 @@
+
+
+/* İçerik alanı */
+main {
+  flex: 1; /* Sayfanın geri kalanını kaplasın */
+  padding: 20px;
+  background-image: url('Desktop/webProje/dark-grunge-texture.jpg'); 
+  background-repeat: repeat; 
+  background-size: auto; 
+  height: 500vh;/*background-imageye kadar silinebilir arka plan fotosu kullanılmayacaksa*/
+}
+
+.content {
+  margin-left: 15px;
+}
+
+
+header {
+   /*position: fixed;       Sayfanın üstünde sabit kalsın */
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color:#131313; /* Arka plan istersen */
+  z-index: 1000; /* Önde görünsün */
+  height: 50px;
+  background: linear-gradient(180deg, #D7A96D,#7E3E3E, #0D0D0D,#0D0D0D);
+  
+
+}
+
+.header-title{
+    
+position: absolute;
+color: rgb(255, 255, 255);
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  margin: 0;
+   background: linear-gradient(360deg, #ffffff,#dfdfdf, #DDE1E4);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+}
+
+
+.logo {
+  height: 130px; /* İstediğin yükseklik 100*/
+  width: auto;  /* Oran bozulmasın */
+  display: block;
+  transition: transform 0.3s ease; /* Yumuşak geçiş için */
+  cursor: pointer; /* Fare imlecini değiştirir */
+  margin-top: 2px; /*normalde 10*/
+  z-index: 1001;
+  margin-left: 20px; /*normalde bu yok*/
+  transform: rotate(90deg);
+}
+.logo:hover {
+  transform: scale(1.00); /* %20 büyütür */
+  transition: transform 0.5s ease;
+   
+}
+
+
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 10px;   /* Sayfa altından biraz boşluk */
+  right: 10px;    /* Sayfa sağından biraz boşluk */
+  width: 50px;    /* İstediğin genişlik */
+  height: auto;   /* Oran bozulmasın */
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.fixed-bottom-right:hover {
+  transform: scale(1.05); /* Hover ile büyür */
+}
+
+
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 2000px; /* Sayfa uzunluğu testi */
+    }
+
+    /* Dış kapsayıcı: sağda ortada kutu + menü */
+    .nav-container {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      
+
+    }
+
+    /* Menü açma kutusu */
+    .menu-toggle {
+      width: 25px;
+      height: 90px;
+      background-color: #131313;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 15px;
+      user-select: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      background: linear-gradient(180deg, #D7A96D,#7E3E3E,#0D0D0D);
+    }
+
+    .menu-toggle:hover {
+      background-color: #ff4c4c;
+      
+    }
+
+    /* Asıl nav bar: başlangıçta görünmez (genişlik 0) */
+    nav.right-navbar {
+      background-color: rgba(14, 14, 14, 0.9);
+      overflow: hidden;
+      width: 0;
+      transition: width 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px 0 0 8px;
+      margin-left: 5px;
+    }
+
+    /* Nav bar linkleri */
+    nav.right-navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      white-space: nowrap;
+      border-bottom: 1px solid #444;
+      transition: background-color 0.3s ease;
+      display: block;
+      background: linear-gradient(180deg,#7E3E3E );
+      
+      
+    }
+
+    nav.right-navbar a:hover {
+      
+      transform: scale(1.06);
+      background: linear-gradient(180deg, #D7A96D);
+    }
+
+    /* Hover ile nav açılacak */
+    .nav-container:hover nav.right-navbar {
+      width: 180px; /* İstediğin genişlik */
+    }
+
+
+
+   footer {
+  background-color: #ffffff31;
+  text-align: right;
+  padding: 8px 15px;
+  margin-top: 2900px;
+}
+
+.bottom-image {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Yumuşak geçiş için */
+  cursor: pointer;
+  
+}
+
+.bottom-image:hover {
+  transform: scale(1.09); 
+}
+
+
+.floating-image {
+      position: fixed;
+      cursor: pointer;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  transition: 
+    opacity 0.8s ease-in-out,
+    transform 0.8s ease-in-out;
+  z-index: 999;
+    }
+
+    .floating-image.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .floating-image:hover{
+
+        transform: scale(1.05);
+       transition: transform 0.3s ease;
+    }
+
+
+    div{
+      color: #ffffff;/*Silinebilir arka plan için*/
+    }
+
