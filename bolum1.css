@@ -22,7 +22,7 @@ header {
   left: 0;
   padding: 10px 20px;
   background-color:#131313; /* Arka plan istersen */
-  z-index: 1000; /* Önde görünsün */
+  z-index: 1000; /* Önde görünsün             */
   height: 50px;
   background: linear-gradient(180deg, #D7A96D,#7E3E3E, #0D0D0D,#0D0D0D);
   
